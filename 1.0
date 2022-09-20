@@ -55,7 +55,7 @@ printf("O resultado e:\t %f", resultado);
 printf("\n");
 
 //system("pause"); = getch() nesse caso pois o getch apenas espera vc digitar algo
-printf("\ndigite qualquer valor para fazer uma nova operacao:  ");
+printf("\npressione qualquer tecla para continuar:  ");
 getch();
 system("cls");
 } 
