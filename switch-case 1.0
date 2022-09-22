@@ -1,0 +1,72 @@
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+int main()
+{
+
+int num1, num2, resultado, c;
+
+
+do
+{
+
+printf("\n(1) Adicao\n");
+printf("(2) Subtracao\n");
+printf("(3) Multiplicacao\n");
+printf("(4) Divisao\n");
+printf("(0) Encerrar\n");
+
+printf("\nEscolha a operacao: ");
+scanf("%i", &c);
+
+//c = getche();
+
+if( c != 0)
+{
+printf("\nDitigite o primeiro numero: ");
+scanf("%i", &num1);
+printf("Ditigite o segundo numero: ");
+scanf("%i", &num2);
+     
+switch (c)
+{
+case 1:
+	resultado = num1 + num2;
+	printf("%i", resultado);
+break;
+
+case 2:
+	resultado = num1 - num2;
+	printf("%i", resultado);
+break;
+case 3:
+	resultado = num1 * num2;
+	printf("%i", resultado);
+break;
+case 4:
+	resultado = num1 / num2;
+	printf("%i", resultado);
+break;
+default:
+	printf("invalida");
+}     
+     
+    
+printf("\n");
+printf("O resultado e:\t %i", resultado);
+printf("\n");
+
+//system("pause"); = getch() nesse caso pois o getch apenas espera vc digitar algo
+printf("\npressione qualquer tecla para continuar:  ");
+getch();
+system("cls");
+} 
+}while ( c != '0');
+
+
+
+
+return 0;
+}
